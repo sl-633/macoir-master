@@ -1,0 +1,542 @@
+{
+  "ID72": {
+    "passage": "Pyroptosis is a highly inflammatory form of lytic programmed cell death that occurs most frequently upon infection with intracellular pathogens and is likely to form part of the antimicrobial response. Pyroptosis can take place in immune cells and is also reported to occur in keratinocytes and some epithelial cells. Formation of pores causes cell membrane rupture and release of cytokines, as well as various damage-associated molecular pattern (DAMP) molecules such as HMGB-1, ATP and DNA, out of the cell. These molecules recruit more immune cells and further perpetuate the inflammatory cascade in the tissue.",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0070269",
+        "name": "pyroptosis"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041386",
+        "name": "release of DAMP molecules by cell rupture"
+      }
+    ]
+  },
+  "ID311": {
+    "passage": "Formation of pores causes cell membrane rupture and release of cytokines, as well as various damage-associated molecular pattern (DAMP) molecules such as HMGB-1, ATP and DNA, out of the cell. These molecules recruit more immune cells and further perpetuate the inflammatory cascade in the tissue.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041386",
+        "name": "release of DAMP molecules by cell rupture"
+      }
+    ]
+  },
+  "ID109": {
+    "passage": "Neutrophils entrapped inside inflamed pulmonary vessels can produce neutrophil extracellular traps (NETs) in a process termed \u7ab6\u6717ETosis\u7ab6, and these are thought to capture viral particles and thereby restrict viral dissemination. However, NETosis can also aggravate damage to the pulmonary endothelia and epithelia in severe influenza-induced pneumonia. NETs also activate the extrinsic and intrinsic coagulation pathway.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0002149",
+        "name": "netosis"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036011",
+        "name": "vascular endothelial cell damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041129",
+        "name": "neutrophil extracellular trap formation"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0030194",
+        "name": "positive regulation of blood coagulation"
+      }
+    ]
+  },
+  "ID269": {
+    "passage": "Neutrophils entrapped inside inflamed pulmonary vessels can produce neutrophil extracellular traps (NETs) in a process termed \u7ab6\u6717ETosis\u7ab6, and these are thought to capture viral particles and thereby restrict viral dissemination63. However, NETosis can also aggravate damage to the pulmonary endothelia and epithelia in severe influenza-induced pneumonia64. NETs also activate the extrinsic and intrinsic coagulation pathway",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0002149",
+        "name": "netosis"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036011",
+        "name": "vascular endothelial cell damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041129",
+        "name": "neutrophil extracellular trap formation"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0030194",
+        "name": "positive regulation of blood coagulation"
+      }
+    ]
+  },
+  "ID116": {
+    "passage": "Our data show that high frequency of NK cells and early and transient increase of specific IgA, IgM and, to a lower extent, IgG are associated with asymptomatic SARS-CoV-2 infection. By contrast, monocyte expansion and high and persistent levels of IgA and IgG, produced relatively late in the course of the infection, characterize severe disease.",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0002377",
+        "name": "immunoglobulin production"
+      }
+    ]
+  },
+  "ID158": {
+    "passage": "Tumor necrosis factor (TNF)\u7ab6\u675cediated expression of tissue factor promotes platelet aggregation and microthrombus formation, as well as intraalveolar coagulation and hyaline\uff82\uff6dmembrane formation",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0004832",
+        "name": "TNF signaling"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0031038",
+        "name": "microthrombus formation"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_1901731",
+        "name": "positive regulation of platelet aggregation"
+      }
+    ]
+  },
+  "ID278": {
+    "passage": "Tumor necrosis factor mediated expression of tissue factor promotes platelet aggregation and microthrombus formation.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0004832",
+        "name": "TNF signaling"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_1901731",
+        "name": "positive regulation of platelet aggregation"
+      }
+    ]
+  },
+  "ID63": {
+    "passage": "The endothelium normally provides a surface on which blood does not clot, because it contains and expresses substances that prevent clotting, including heparan sulfate which acts as a cofactor for activating antithrombin, a protease that inactivates several factors in the coagulation cascade.",
+    "entities": []
+  },
+  "ID126": {
+    "passage": "Blood clotting (thrombosis and fibrinolysis). The endothelium normally provides a surface on which blood does not clot, because it contains and expresses substances that prevent clotting, including heparan sulfate which acts as a cofactor for activating antithrombin, a protease that inactivates several factors in the coagulation cascade.",
+    "entities": []
+  },
+  "ID17": {
+    "passage": "One of the major pathways for NF-\uff8e\uff7aB activation after coronavirus infection is the MyD88 pathway through pattern recognition receptors (PRRs), leading to the induction of a variety of pro-inflammatory cytokines, including interleukin-6 (IL-6), tumor necrosis factor alpha (TNF\uff8e\uff71) and chemokines. The AngII-AT1R axis also activates NF-\uff8e\uff7aB and disintegrin and metalloprotease 17 (ADAM17), which generates the mature form of epidermal growth factor receptor (EGFR) ligands and TNF\uff8e\uff71, two NF-\uff8e\uff7aB stimulators (Eguchi et al., 2018). ADAM17 induction also processes the membrane form of IL-6R\uff8e\uff71 to the soluble form (sIL-6R\uff8e\uff71), followed by the gp130-mediated activation of STAT3 via the sIL-6R\uff8e\uff71-IL-6 complex in a variety of IL-6R\uff8e\uff71-negative nonimmune cells including fibroblasts, endothelial cells, and epithelial cells (Murakami et al., 2019). STAT3 is required for full activation of the NF-\uff8e\uff7aB pathway, and the main stimulator of STAT3 in vivo is IL-6, especially during inflammation, although there are nine other members of IL-6 family cytokines that can activate STAT3, at least in vitro (Murakami et al., 2019). Therefore, SARS-CoV-2 infection in the respiratory system can activate both NF-\uff8e\uff7aB and STAT3, which in turn can activate the IL-6 amplifier (IL-6 Amp), a mechanism for the hyper-activation of NF-\uff8e\uff7aB by STAT3, leading to multiple inflammatory and autoimmune diseases (Murakami et al., 2019).",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0032640",
+        "name": "tumor necrosis factor production"
+      }
+    ]
+  },
+  "ID45": {
+    "passage": "SARS-CoV-2 itself activates NF-kB via pattern recognition receptors (PPRs), and the accumulated AngII induces inflammatory cytokines including TNFa and IL-6-soluble (s)IL-6R via disintegrin and metalloprotease 17 (ADAM17), followed by activation of the IL-6 amplifier (IL-6 AMP), which describes enhanced NF-kB activation machinery via the coactivation of NF-kB and transcription factor STAT3.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000761",
+        "name": "NfkB signaling"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0002534",
+        "name": "cytokine production involved in inflammatory response"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0032635",
+        "name": "interleukin-6 production"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0032640",
+        "name": "tumor necrosis factor production"
+      }
+    ]
+  },
+  "ID6": {
+    "passage": "In some cases, abnormal immune mechanisms initiate and promote pulmonary fibrosis, possibly as a consequence of a cytokine storm.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036028",
+        "name": "cytokine storm"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040023",
+        "name": "pulmonary fibrosis"
+      }
+    ]
+  },
+  "ID171": {
+    "passage": "Although many patients who develop ARDS survive the acute phase of the illness, a substantial proportion die as a result of progressive pulmonary fibrosis. Importantly, in an autopsy study of 159 patients with ARDS, fibrosis was noted in three (4%) of 82 patients with a disease duration of less than 1 week, 13 (24%) of 54 patients with a disease duration of between weeks 1 and 3, and 14 (61%) of 23 patients with a disease duration of greater than 3 weeks, suggesting that to be effective, any potential antifibrotic intervention should be considered within the first week of ARDS onset. A substantial proportion of patients who develop ARDS will experience residual long-term impairment of lung function and CT evidence of pulmonary fibrosis, with anterior reticulation the dominant abnormality in as many as 85% of survivors. Multiple aberrant host pathways interconnect to result in pulmonary fibrosis in a subset of individuals who develop ARDS. Important mediators include the dysregulated release of matrix metalloproteinases during the inflammatory phase of ARDS, which causes epithelial and endothelial injury and unchecked fibroproliferation. Canonical profibrotic pathways regulated by TGF-beta are important, and there is evidence that vascular dysfunction is a key component of the switch from ARDS to fibrosis, with VEGF and cytokines such as IL-6 and TNFalpha implicated. In fatal cases of COVID-19, pulmonary fibrosis is generally present at autopsy, with anecdotal reports of severe fibrotic organising pneumonia. In some cases, abnormal immune mechanisms initiate and promote pulmonary fibrosis, possibly as a consequence of a cytokine storm.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040023",
+        "name": "pulmonary fibrosis"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036028",
+        "name": "cytokine storm"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040561",
+        "name": "endothelium damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040742",
+        "name": "dysregulation of matrix metalloproteinase secretion"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040949",
+        "name": "epithelium damage in lung"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000192",
+        "name": "inflammatory response"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036014",
+        "name": "type I alveolar epithelial cell injury"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0002534",
+        "name": "cytokine production involved in inflammatory response"
+      }
+    ]
+  },
+  "ID220": {
+    "passage": "Indeed, circulating IFN-gamma and CXCL10 concentrations are raised in patients with severe COVID-19.",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0032609",
+        "name": "interferon-gamma production"
+      }
+    ]
+  },
+  "ID238": {
+    "passage": "Multiple aberrant host pathways interconnect to result in pulmonary fibrosis in a subset of individuals who develop ARDS. Important mediators include the dysregulated release of matrix metalloproteinases during the inflammatory phase of ARDS, which causes epithelial and endothelial injury and unchecked fibroproliferation.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040742",
+        "name": "dysregulation of matrix metalloproteinase secretion"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040023",
+        "name": "pulmonary fibrosis"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040949",
+        "name": "epithelium damage in lung"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040561",
+        "name": "endothelium damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000192",
+        "name": "inflammatory response"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036014",
+        "name": "type I alveolar epithelial cell injury"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040319",
+        "name": "Tissue damage"
+      }
+    ]
+  },
+  "ID241": {
+    "passage": "Important mediators include the dysregulated release of matrix metalloproteinases during the inflammatory phase of ARDS, which causes epithelial and endothelial injury and unchecked fibroproliferation.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040561",
+        "name": "endothelium damage"
+      }
+    ]
+  },
+  "ID243": {
+    "passage": "Furthermore, JNK family inhibition impairs synthesis of H5N1 viral RNA, and SARS-CoV-2 has been shown to stimulate pro-inflammatory pathways via JNK signalling pathways.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000769",
+        "name": "JNK signaling"
+      }
+    ]
+  },
+  "ID257": {
+    "passage": "Subsequent studies have found that exogenously administered as well as endogenously produced interferon might induce pulmonary vasculopathy, and this finding is important given that pulmonary vascular disease could play an important role in severe COVID-19 disease. Indeed, circulating IFN-gamma and CXCL10 concentrations are raised in patients with severe COVID-19.",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0032609",
+        "name": "interferon-gamma production"
+      }
+    ]
+  },
+  "ID88": {
+    "passage": "Dysregulated immune response and cytokine-release syndrome, due to overactivation of innate immunity in the setting of T cell lymphodepletion, characterize the presentations of severe COVID-19. Hyperinflammation seen with cytokine storm and hypoxia-associated metabolic derangements are other potential mechanisms of liver damage.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036028",
+        "name": "cytokine storm"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000524",
+        "name": "expanding inflammation"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0140374",
+        "name": "antiviral innate immune response"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000192",
+        "name": "inflammatory response"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040960",
+        "name": "dysregulation of immune response"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/MP_0005039",
+        "name": "hypoxia"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0002130",
+        "name": "malfunctioning of metabolism"
+      }
+    ]
+  },
+  "ID101": {
+    "passage": "Other neurological manifestations support, at least, the neurovirulence of COVID-19, perhaps reflecting the proinflammatory and prothrombotic cascade in the wake of cytokine storm as it affects brain vasculature and the blood\u7ab6\u6fb1rain barrier, especially in the setting of toxic-metabolic sequelae of multi-organ dysfunction often seen in COVID-19-associated critical illness. While patients with viral infections are at risk for MI in gen-eral, this risk may be exaggerated in patients with COVID-19, given reports of disproportionately increased hypercoagulability in affected people, which would lead to a possible increase in thrombotically mediated MI.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040696",
+        "name": "positive regulation of thrombus formation"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0031038",
+        "name": "microthrombus formation"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040474",
+        "name": "thrombus formation"
+      }
+    ]
+  },
+  "ID103": {
+    "passage": "Autopsy studies of patients who died due to COVID-19 have shown high rates of microvascular and macrovascular thromboses, especially in the pulmonary circulation. Microthrombi and microangiopathic pathology, associated with foci of hemorrhage, were also noted on autopsies of ten African-American patients with severe COVID-19 from New Orleans, Louisiana, USA100.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0031038",
+        "name": "microthrombus formation"
+      }
+    ]
+  },
+  "ID108": {
+    "passage": "There is also emerging evidence of thrombosis in intravenous catheters and extracorporeal circuits, and arterial vascular occlusive events, including acute myocardial infarction (MI), acute limb ischemia, and stroke, in severely affected people in studies from the USA, Italy and France. Other neurological manifestations support, at least, the neurovirulence of COVID-19, perhaps reflecting the proinflammatory and prothrombotic cascade in the wake of cytokine storm as it affects brain vasculature and the blood\u7ab6\u6fb1rain barrier, especially in the setting of toxic-metabolic sequelae of multi-organ dysfunction often seen in COVID-19-associated critical illness.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040474",
+        "name": "thrombus formation"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041004",
+        "name": "limb ischemia (process)"
+      }
+    ]
+  },
+  "ID113": {
+    "passage": "Dysregulated immune response and cytokine-release syndrome, due to overactivation of innate immunity in the setting of T cell lymphodepletion, characterize the presentations of severe COVID-19.",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0140374",
+        "name": "antiviral innate immune response"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040960",
+        "name": "dysregulation of immune response"
+      }
+    ]
+  },
+  "ID130": {
+    "passage": "Hyperinflammation seen with cytokine storm and hypoxia-associated metabolic derangements are other potential mechanisms of liver damage.",
+    "entities": [
+      {
+        "id": "http://purl.obolibrary.org/obo/MP_0005039",
+        "name": "hypoxia"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0002130",
+        "name": "malfunctioning of metabolism"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040577",
+        "name": "organ damage"
+      }
+    ]
+  },
+  "ID163": {
+    "passage": "Moreover, patients hospitalized with COVID-19 have exhibited a range of abnormalities of glucose metabolism, including worsened hyperglycemia, euglycemic ketosis, and classic diabetic ketoacidosis. In addition, ACE2 expression has been reported in the endocrine pancreas, albeit inconsistently. This raises the possibility that direct binding of SARS-CoV-2 to ACE2 on beta-cells might contribute to insulin deficiency and hyperglycemia, as has been shown previously for infection with SARS-CoV.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0001912",
+        "name": "increasing blood glucose level"
+      }
+    ]
+  },
+  "ID211": {
+    "passage": "Thrombocytopenia, although often mild (in 5\u7ab636% of admissions), is associated with worse patient outcomes.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0001479",
+        "name": "decrease in platelet count"
+      }
+    ]
+  },
+  "ID215": {
+    "passage": "Isolated right ventricular failure with and without confirmed pulmonary embolism has also been reported. Moreover, isolated right ventricular dysfunction may occur as a result of elevated pulmonary vascular pressures secondary to ARDS, pulmonary thromboembolism, or potentially virus-mediated injury to vascular endothelial and smoothmuscle tissue.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040666",
+        "name": "embolus formation in lung"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040561",
+        "name": "endothelium damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0039598",
+        "name": "respiratory blood vessel smooth muscle damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040474",
+        "name": "thrombus formation"
+      }
+    ]
+  },
+  "ID221": {
+    "passage": "Elevation of serum inflammatory markers such as C-reactive protein, ferritin, erythrocyte sedimentation rate, D-dimer, fibrinogen, and lactate dehydrogenase is predictive of subsequent critical illness and mortality in patients with COVID-19.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040579",
+        "name": "increasing fibrinogen concentration"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0000192",
+        "name": "inflammatory response"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040491",
+        "name": "increasing ferritin concentration in blood"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040494",
+        "name": "increasing C-reactive protein concentration in blood"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040670",
+        "name": "increasing lactate dehydrogenase concentration"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0002532",
+        "name": "production of molecular mediator involved in inflammatory response"
+      }
+    ]
+  },
+  "ID242": {
+    "passage": "Moreover, isolated right ventricular dysfunction may occur as a result of elevated pulmonary vascular pressures secondary to ARDS, pulmonary thromboembolism, or potentially virus-mediated injury to vascular endothelial and smoothmuscle tissue.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040561",
+        "name": "endothelium damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0039598",
+        "name": "respiratory blood vessel smooth muscle damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041008",
+        "name": "increasing blood pressure"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040474",
+        "name": "thrombus formation"
+      }
+    ]
+  },
+  "ID250": {
+    "passage": "Infection-mediated endothelial injury (characterized by elevated levels of von Willebrand factor) and endothelialitis (marked by the presence of activated neutrophils and macrophages), found in multiple vascular beds (including the lungs, kidney, heart, small intestine, and liver) in patients with COVID-19, can trigger excessive thrombin production, inhibit fibrinolysis, and activate complement pathways, initiating thromboinflammation and ultimately leading to microthrombi deposition and microvascular dysfunction.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041351",
+        "name": "inflammatory response in endothelium"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040561",
+        "name": "endothelium damage"
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO_0030194",
+        "name": "positive regulation of blood coagulation"
+      }
+    ]
+  },
+  "ID256": {
+    "passage": "Autopsy studies of patients who died due to COVID-19 have shown high rates of microvascular and macrovascular thromboses, especially in the pulmonary circulation.",
+    "entities": []
+  },
+  "ID259": {
+    "passage": "Studies examining specific lymphocyte subsets have revealed decreases in both CD4+ T cells and CD8+ T cells to be associated with severe COVID-19.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040970",
+        "name": "decreasing T cells"
+      }
+    ]
+  },
+  "ID262": {
+    "passage": "In addition, leukocytosis (especially neutrophilia), seen less commonly, is also a negative prognostic marker.",
+    "entities": []
+  },
+  "ID263": {
+    "passage": "There is also emerging evidence of thrombosis in intravenous catheters and extracorporeal circuits, and arterial vascular occlusive events, including acute myocardial infarction (MI), acute limb ischemia, and stroke, in severely affected people in studies from the USA, Italy and France.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041001",
+        "name": "decreasing limb blood flow"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041004",
+        "name": "limb ischemia (process)"
+      }
+    ]
+  },
+  "ID264": {
+    "passage": "Isolated right ventricular failure with and without confirmed pulmonary embolism has also been reported. Moreover, isolated right ventricular dysfunction may occur as a result of elevated pulmonary vascular pressures secondary to ARDS, pulmonary thromboembolism, or potentially virus-mediated injury to vascular endothelial and smoothmuscle tissue. SARS-CoV-2 can cause both direct cardiovascular sequelae and indirect cardiovascular sequelae, including myocardial injury, acute coronary syndromes (ACS), cardiomyopathy, acute cor pulmonale, arrhythmias, and cardiogenic shock, as well as the aforementioned thrombotic complications.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041008",
+        "name": "increasing blood pressure"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0041548",
+        "name": "blood vessel damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0039598",
+        "name": "respiratory blood vessel smooth muscle damage"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040474",
+        "name": "thrombus formation"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040930",
+        "name": "right ventricular dysfunction"
+      },
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0040666",
+        "name": "embolus formation in lung"
+      }
+    ]
+  },
+  "ID271": {
+    "passage": "SARS-CoV-2 can cause both direct cardiovascular sequelae and indirect cardiovascular sequelae, including myocardial injury, acute coronary syndromes (ACS), cardiomyopathy, acute cor pulmonale, arrhythmias, and cardiogenic shock, as well as the aforementioned thrombotic complications.",
+    "entities": []
+  },
+  "ID302": {
+    "passage": "ACE2 expression has been demonstrated in arterial and venous endothelium of several organs, and histopathological studies have found microscopic evidence of SARS-CoV-2 viral particles in endothelial cells of the kidneys and lungs.",
+    "entities": [
+      {
+        "id": "http://purl.bioontology.org/ontology/HOIP/HOIP_0036376",
+        "name": "viral colonization"
+      }
+    ]
+  }
+}
