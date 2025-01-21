@@ -1,0 +1,23 @@
+{
+  "transformer_name": "facebook/bart-large",
+  "train_passage_path": "../data/hoip/cr_input_json/ssid_train.json",
+  "dev_passage_path": "../data/hoip/cr_input_json/ssid_dev_explicit.json",
+  "test_passage_path": "../data/hoip/cr_input_json/ssid_test_explicit.json",
+  "train_name_path": "../data/hoip/cr_input_json/ssid_train_name_to_id.json",
+  "train_synonym_path": "../data/hoip/cr_input_json/ssid_train_synonym_to_id.json",
+  "train_claim_path": "../data/hoip/cr_input_json/ssid_train_claim_to_id.json",
+  "pred_path": "../data/hoip/cr_input_json/for_prediction.json",
+  "use_name": true,
+  "use_synonym": true,
+  "use_claim": true,
+  "learning_rate": 1e-5,
+  "num_train_epochs": 30,
+  "per_device_train_batch_size": 8,
+  "per_device_eval_batch_size": 8,
+  "max_length": 1024,
+  "num_return_sequences": 10,
+  "training": true,
+  "evaluation": true,
+  "prediction": true,
+  "read_model": false
+}
