@@ -40,7 +40,7 @@ and prediction for Mention-Agnostic Concept Recognition through an Indexing-Reco
 ### HPO Dataset
 
 1. **Download Data**
-    - Download the dataset from [IHP GSC+](https://github.com/lasigeBioTM/IHP/blob/master/GSC%2B.rar).
+    - Download the dataset from [HPO GSC+](https://github.com/lasigeBioTM/IHP/blob/master/GSC%2B.rar).
     - Extract the `Annotations` and `Text` directories to `data/hpo/ori`.
     - Download `hp.json` from [HPO Ontology](https://hpo.jax.org/data/ontology) and save it in `data/hpo/ori`.
 
@@ -301,9 +301,67 @@ Please breakdown the following input into a set of small, independent claims (ma
 ```
 It is noted that LLM-generated outputs do not always follow the format limitation. Some manual efforts are needed to post-process the generated outputs.
 
+We provide scripts for LLM-based generation tasks.
+
+- `generate_claim_query.py`: Generates claims based on the dataset and input file.
+- `generate_concept_query.py`: Generates concepts based on the dataset and input file.
+
+To run these scripts, you need to:
+
+1. Place your Hugging Face Hub API key in **line 51** of the respective script.
+2. Set the `dataset` and `passage_file` parameters when executing the script.
+
+### Generating Claims
+Run the `generate_claim_query.py` script as follows:
+```bash
+python generate_claim_query.py --dataset {dataset} --passage_file {passage_file}
+```
+
+#### Example
+To generate claims for the HOIP test passages:
+```bash
+python generate_claim_query.py --dataset hoip --passage_file test_ori.json
+```
+
+The model outputs will be saved in the directory: ```../../../data/{dataset}/generated_files```
+
+### Generating Concepts
+Run the `generate_concept_query.py` script as follows:
+```bash
+python generate_concept_query.py --dataset {dataset} --passage_file {passage_file}
+```
+
+In our experiments, we used **10-shot In-Context Learning (ICL)** for concept name generation. Demonstrations were randomly selected from the training set. Note that we do not provide a specific demonstration selection code in `generate_claim_query.py`. Instead, we recommend designing your own demonstration selection strategies, using our zero-shot generation scripts as a starting point.
+
 ---
 
+## Data augmentation
+![github_claim_concept](https://github.com/user-attachments/assets/0cc16a43-287b-42b6-b44a-d0c03427c12c)
 
+We provide the scripts for text excerpt mining in `scripts/utils/preprocess/get_excerpts.py`.
+
+Set the `dataset`, `input_type`, `input_file_path`, and `output_file_path` parameters when executing the script.
+
+`input_type` can be `passage` or `claim`. When `input_type=passage`, we first segmented a passage into sentences, then
+extracted text excerpts. When `input_type=claim`, we load `g_claim` list for each passage from the input file, then get
+the text excerpts from each claim. All excerpts from claims of one passage are merged into a list and the list is saved
+as `excerpt` in the output file.
+
+For example, to get excerpts for the HOIP test passages:
+
+```bash
+python generate_claim_query.py --dataset hoip --input_type passage --passage_file test_ori.json
+```
+
+The scripts used for the labelling function when constructing the claim-concept data are not included in this repository.
+This is because this step involves a simple cosine-similarity calculation between excerpts and gold concepts, which can
+be implemented using any method or tool of your choice.
+
+The claim-concept data we constructed is available in the following file:
+`data/hoip/ori_json/train_claim_concept_pairs.json`.
+
+
+---
 
 ## Additional Information
 
