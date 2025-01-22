@@ -205,8 +205,103 @@ Results include precision, recall, and F1-score for passage-level queries.
       ```bash
       python eval_multi_type_query.py --index_type {index type} --dataset {dataset} --prediction_file_path {prediction file path}
       ```
+---
+
+## Generate multiple types of queries
+
+The large language model we used is `meta-llama/Meta-Llama-3-8B-Instruct`.
+The configuration of generation is
+```python
+def generate_per_inst(model, terminators, input_ids):
+    outputs = model.generate(
+        input_ids,
+        max_new_tokens=512,
+        eos_token_id=terminators,
+        do_sample=True,
+        temperature=0.8,
+        top_p=0.9,
+        pad_token_id=model.config.pad_token_id
+    )
+    response = outputs[0][input_ids.shape[-1]:]
+
+    return tokenizer.decode(response, skip_special_tokens=True)
+```
+
+Here we provide the prompt templates used in the paper for claim and concept name generation given a passage.
+
+### CDR concept
+```text
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are a helpful, respectful and honest assistant.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please list all concepts referring to a chemical concept or a disease concept in following input (make sure not to add any information), and return the output as a jsonl, where each line is {"Chemical":[CHEMICAL]} or {"Disease":[DISEASE]}. If there is no chemical or disease concept in the input, it is fine to only return {"Chemical":None} or {"Disease":None}. Directly return the jsonl with no explanation or other formatting.
+The input is: "{passage for the 1st demostration}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+{answer for the 1st demostration} <|eot_id|>
+…
+<|start_header_id|>user<|end_header_id|>
+The input is: "{passage for the nth demostration}"<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+{answer for the nth demostration} <|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please list all concepts referring to a chemical concept or a disease concept in following input (make sure not to add any information), and return the output as a jsonl, where each line is {"Chemical":[CHEMICAL]} or {"Disease":[DISEASE]}. If there is no chemical or disease concept in the input, it is fine to only return {"Chemical":None} or {"Disease":None}. Directly return the jsonl with no explanation or other formatting.
+The input is: "{passage}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+```
+
+### HPO concept
+```text
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are a helpful, respectful and honest assistant.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please list all concepts referring to a medically relevant human phenotype concept in following input (make sure not to add any information), and return the output as a jsonl, where each line is {"phenotype":[PHENOTYPE]}. If there is no human phenotype concept in the input, it is fine to only return {"phenotype":None}. Directly return the jsonl with no explanation or other formatting. 
+The input is: "{passage for the 1st demostration}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+{answer for the 1st demostration} <|eot_id|>
+…
+<|start_header_id|>user<|end_header_id|>
+The input is: "{passage for the nth demostration}"<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+{answer for the nth demostration} <|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please list all concepts referring to a medically relevant human phenotype concept in following input (make sure not to add any information), and return the output as a jsonl, where each line is {"phenotype":[PHENOTYPE]}. If there is no human phenotype concept in the input, it is fine to only return {"phenotype":None}. Directly return the jsonl with no explanation or other formatting. 
+The input is: "{passage}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+```
+
+### HOIP concept
+```text
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are a helpful, respectful and honest assistant.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please list all biological processes involved in the phenomenon described in the following input (make sure not to add any information), and return the output as a jsonl, where each line is {"process":[PROCESS]}. If there is no process in the input, it is fine to only return {"process":None}. Directly return the jsonl with no explanation or other formatting.
+The input is: "{passage for the 1st demostration}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+{answer for the 1st demostration} <|eot_id|>
+…
+<|start_header_id|>user<|end_header_id|>
+The input is: "{passage for the nth demostration}"<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+{answer for the  nth demostration} <|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please list all biological processes involved in the phenomenon described in the following input (make sure not to add any information), and return the output as a jsonl, where each line is {"process":[PROCESS]}. If there is no process in the input, it is fine to only return {"process":None}. Directly return the jsonl with no explanation or other formatting.
+The input is: "{passage}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+```
+
+### HOIP claim
+```text
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are a helpful, respectful and honest assistant.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+Please breakdown the following input into a set of small, independent claims (make sure not to add any information), and return the output as a jsonl, where each line is {"claim":[CLAIM], "score":[CONF]}. The confidence score [CONF] should represent your confidence in the claim, where a 1 is obvious facts and results like ‘The earth is round’ and ‘1+1=2’. A 0 is for claims that are very obscure or difficult for anyone to know, like the birthdays of non-notable people. If the input is short, it is fine to only return 1 claim. Directly return the jsonl with no explanation or other formatting. The input is: "{passage}" <|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+```
+It is noted that LLM-generated outputs do not always follow the format limitation. Some manual efforts are needed to post-process the generated outputs.
 
 ---
+
+
 
 ## Additional Information
 
