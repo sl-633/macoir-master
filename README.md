@@ -350,7 +350,7 @@ as `excerpt` in the output file.
 For example, to get excerpts for the HOIP test passages:
 
 ```bash
-python generate_claim_query.py --dataset hoip --input_type passage --passage_file test_ori.json
+python generate_claim_query.py --dataset hoip --input_type passage --input_file_path test_ori.json --output_file_path test_excerpt.json
 ```
 
 The scripts used for the labelling function when constructing the claim-concept data are not included in this repository.
