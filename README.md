@@ -4,7 +4,7 @@
 
 This repository contains tools and workflows for data preprocessing, label tree building, model training, evaluation,
 and prediction for Mention-Agnostic Concept Recognition through an Indexing-Recognition Framework (MA-COIR).
-![overview_0](https://github.com/user-attachments/assets/6267742c-7f77-4c07-9fb5-372aa370beca)
+![github_overview](https://github.com/user-attachments/assets/6b045a91-8987-4d8c-b7ac-680ce8544847)
 
 ## Data Preprocessing
 
@@ -97,8 +97,7 @@ and prediction for Mention-Agnostic Concept Recognition through an Indexing-Reco
   ```
 
 ### SSID Index Building
-
-![indexing_0](https://github.com/user-attachments/assets/3607362f-1fa2-42c0-a816-448d83ce1247)
+![github_indexing](https://github.com/user-attachments/assets/aa39c46f-cc60-48cb-9a40-6840dafcb3e7)
 
 - Navigate to `scripts/utils`.
 - Run:
