@@ -293,7 +293,7 @@ if __name__ == '__main__':
     INT_TOKEN_IDS = sorted(INT_TOKEN_IDS)
 
 
-    def restrict_decode_vocab():
+    def restrict_decode_vocab(batch_idx, prefix_beam):
         return INT_TOKEN_IDS
 
 
