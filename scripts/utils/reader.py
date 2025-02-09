@@ -18,21 +18,21 @@ def load_passage_pairs(source_path: str, tokenizer, max_seq_length=1024, cate="t
     for inst in ori_insts:
 
         input_text = inst["description"]
-        ssid = []
+        search_id = []
         for e in inst["entity_list"]:
             if type(e) == list:
-                cur_ssid = "-".join([str(idx) for idx in e])
+                cur_search_id = "-".join([str(idx) for idx in e])
             else:
-                cur_ssid = str(e)
-            ssid.append(cur_ssid)
-        ssid = sorted(ssid)
-        ssid = ";".join(ssid)
-        ssid += ";"
+                cur_search_id = str(e)
+            search_id.append(cur_search_id)
+        search_id = sorted(search_id)
+        search_id = ";".join(search_id)
+        search_id += ";"
 
         src_ids = tokenizer(input_text.strip(), return_tensors='pt')['input_ids'][0].tolist()
         if len(src_ids) > max_seq_length:
             src_ids = src_ids[:max_seq_length - 1] + [tokenizer.eos_token_id]
-        tgt_ids = tokenizer(ssid.strip(), return_tensors='pt')['input_ids'][0].tolist()
+        tgt_ids = tokenizer(search_id.strip(), return_tensors='pt')['input_ids'][0].tolist()
 
         if len(tgt_ids) > max_seq_length:
             tgt_ids = tgt_ids[:max_seq_length - 1] + [tokenizer.eos_token_id]
@@ -75,17 +75,17 @@ def load_span_pairs(source_path: str, tokenizer, max_seq_length=1024, cate="trai
     for inst in ori_insts:
 
         input_text = inst["label"]
-        ssid = str(inst["ssid"])
+        search_id = str(inst["si"])
 
         src_ids = tokenizer(input_text.strip(), return_tensors='pt')['input_ids'][0].tolist()
         if len(src_ids) > max_seq_length:
             src_ids = src_ids[:max_seq_length - 1] + [tokenizer.eos_token_id]
-        tgt_ids = tokenizer(ssid.strip(), return_tensors='pt')['input_ids'][0].tolist()
+        tgt_ids = tokenizer(search_id.strip(), return_tensors='pt')['input_ids'][0].tolist()
         if len(tgt_ids) > max_seq_length:
             tgt_ids = tgt_ids[:max_seq_length - 1] + [tokenizer.eos_token_id]
 
         new_inst = {
-            'doc_key': inst['ent_id'],
+            'doc_key': inst['concept_id'],
             'text': inst['label'],
             'src_ids': src_ids,
             'tgt_ids': tgt_ids,
@@ -108,13 +108,14 @@ def load_span_pairs(source_path: str, tokenizer, max_seq_length=1024, cate="trai
 
 def load_text(dataset: str, source_path: str, tokenizer, max_seq_length=1024):
     if dataset == "cdr":
-        load_cdr_text(source_path, tokenizer, max_seq_length)
+        all_insts, max_src_len, max_tgt_len = load_cdr_text(source_path, tokenizer, max_seq_length)
     elif dataset == "hpo":
-        load_hpo_text(source_path, tokenizer, max_seq_length)
+        all_insts, max_src_len, max_tgt_len = load_hpo_text(source_path, tokenizer, max_seq_length)
     elif dataset == "hoip":
-        load_hoip_text(source_path, tokenizer, max_seq_length)
+        all_insts, max_src_len, max_tgt_len = load_hoip_text(source_path, tokenizer, max_seq_length)
     else:
         raise ValueError("The name of dataset should be 'cdr', 'hpo' or 'hoip'.")
+    return all_insts, max_src_len, max_tgt_len
 
 
 def load_hoip_text(source_path: str, tokenizer, max_seq_length=1024):
